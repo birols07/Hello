@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appelsin - Forsiden</title>
+    <style>
+       *{
+    padding: 0px;
+    margin: 0px;
+}
+
+#toppfelt{
+    width: 100vw; /*vw = viewport width dvs 100vw = 100% av sidebredden */
+    height: 150px;
+    background-color: rgb(111, 185, 56);
+    display: flex;
+    flex-direction: row;
+}
+
+#Linkfelt{
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(14, 81, 64);
+    font-size: 50px;
+    text-align: center;
+    font-family: fantasy;
+    
+}
+
+.linker a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+
+.toppdiv{
+    height: 149px;
+    width: 150px;
+    border: 0px solid gray;
+}
+
+#vtf{
+    background-color: aliceblue;
+    flex-grow: 0.4;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#mtf{
+    background-color: aliceblue; 
+    flex-grow: 4;
+    font-size: 80px;
+    color: rgb(19, 18, 18);
+    text-shadow: 1px 1px 1px rgb(25, 223, 3);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+#htf{background-color: rgb(14, 81, 64);
+    flex-grow: 0.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
+
+}
+
+        #hovedfelt{
+            margin: auto;
+            width: 80vw;
+            height: 800px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+
+        .hoveddiver{
+            width: 30%;
+            height: 30%;
+            background-color: rgb(14, 81, 64);
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 30px;
+            box-shadow: 4px 4px 4px rgb(25, 223, 3);
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .hoveddiver p{
+            font-family: "arial";
+            font-size: x-large;
+            color: aliceblue;
+        }
+        .hoveddiver h1{
+            font-family: "arial";
+            font-size: xx-large;
+            color: aliceblue;
+            text-align: center;
+        }
+        .hoveddiver a{
+            font-family: "arial";
+            font-size: large;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .hoveddiver a:hover{
+            text-decoration: underline;
+        }
+
+        body{
+            background-image: url(images/Sofabilde2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #veksler{
+            display:none;
+        }
+        #meny a{
+            font-size: 35px;
+            color: rgb(0, 0, 0);
+            font: "Arial";
+            font-weight: bold;
+            text-decoration: none;
+            padding-left: 10px;
+        }
+        #meny a:hover{
+            text-decoration: underline;
+        }
+        #meny ul{
+            list-style: none;
+            text-align: left;
+        }
+        #meny li{
+            border-bottom: 3px solid white;
+        }
+        #veksler:checked ~ #meny{
+            display:block;
+        }
+        #meny{
+            background-color: rgb(244, 96, 177);
+            width: 300px;
+            height: 100vh;
+            position: absolute;
+            right: 0px;
+            top: 150px;
+            display:none
+        }
+
+
+    </style>
+
+</head>
+<body>
+   <div id="toppfelt"> 
+    <div class="toppdiv" id="vtf"><img src="Images/Skjermbilde_2024-09-05_123931-removebg-preview.png" alt="Logo" 
+        width="230px" height="150px"></div>
+    <div class="toppdiv"id= "mtf">
+        Produkter
+    </div>
+    <div class="toppdiv"id="htf">
+        <input type="checkbox" id="veksler"> 
+        <label for="veksler" id="htf">&#9776;</label>
+        <nav id="meny">
+            <ul>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Startside</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Tabell</a></li>
+                <li><a href="#">Katalog</a></li>
+            </ul>
+        </nav>
+       
+    </div>
+    </div>
+   </div>
+
+
+   <div id="Linkfelt">
+    <div class="linker">
+    <a href="omoss.html">Om oss</a>
+    <a href="index.html">Startside</a>
+    <a href="parallex.html">Katalog</a>
+    </div>
+   </div>
+   
+<div id="hovedfelt">
+    <div class="hoveddiver">
+        <h1>Blå sofa</h1>
+        <img src="Images/blå_sofa-removebg-preview.png" alt="Blå sofa">
+    </div>
+
+   <div class="hoveddiver">
+    <h1>Rød sofa</h1>
+    <img src="Images/rød_sofa-removebg-preview.png" alt="Rød sofa">
+
+   </div>
+   <div class="hoveddiver"></div>
+   <div class="hoveddiver"></div>
+   <div class="hoveddiver"></div>
+   <div class="hoveddiver"></div>
+   <div class="hoveddiver"></div>
+   <div class="hoveddiver"></div>
+   <div class="hoveddiver"></div>
+
+
+
+   
+    
+
+
+   
+</div>
+
+
+</body>
+</html>
