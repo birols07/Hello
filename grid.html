@@ -1,0 +1,98 @@
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofashoppen - grid</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: grid;
+  }
+  #hoved {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 0px;
+    background-color: #ffffff;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 25px;
+    
+    grid-template-areas: "t t t t t t t t t t t t t t t" 
+                         "n n n . m m m . h h h h h h h"
+                         "n n n . m m m . h h h h h h h"
+                         ". . . . . . . . . . . . . . ."
+                         ". . . . . . . . . . . . . . ."
+                         ;
+
+  }
+  #hoved > div {
+    background-color: #ffbf00;
+    border: 1px solid black;
+  }
+  .topp    { grid-area : t; }
+  .venstre { grid-area : v; }
+  .hoyre   { grid-area : h; }
+  .midten{grid-area: m; }
+  .nede{grid-area: n;}
+
+</style>
+</head>
+<body>
+  <div id="toppfelt"> 
+    <div class="toppdiv" id="vtf"><img src="Images/Skjermbilde_2024-09-05_123931-removebg-preview.png" alt="Logo" 
+        width="230px" height="150px"></div>
+    <div class="toppdiv"id= "mtf">
+        Sofashoppen
+    </div>
+    <div class="toppdiv"id="htf">
+        <input type="checkbox" id="veksler"> 
+        <label for="veksler" id="htf">&#9776;</label>
+        <nav id="meny">
+            <ul>
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Startside</a></li>
+                <li><a href="#">Om oss</a></li>
+                <li><a href="#">Tabell</a></li>
+                <li><a href="#">Katalog</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+   </div>
+
+
+   <div id="Linkfelt">
+    <div class="linker">
+    <a href="omoss.html">Om oss</a>
+    <a href="produkter.html">Produkter</a>
+    <a href="parallex.html">Katalog</a>
+    <a href="Tabell.html">Tabell</a>
+    <a href="index.html">Startside</a>
+     </div>
+   </div>
+
+    <div id="hoved">
+        <div class="topp"> topp 
+            
+        </div>
+       
+        <div class="venstre"> 
+            venstre </div>
+        
+        <div class="hoyre"> høyre 
+
+        </div>
+        <div class="midten"> midten
+
+        </div>
+        <div class="nede">
+
+        </div>
+        
+      </div>
+</body>
